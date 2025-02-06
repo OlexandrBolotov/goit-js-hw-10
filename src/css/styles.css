@@ -1,18 +1,199 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+.body-main {
+  font-family: "Montserrat",
+    sans-serif;
+  ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.task-link {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #4e75ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.task-link:hover {
+  background-color: #6c8cff;
+  ;
+}
+
+
+
+/* timer */
+.body-timer{
+  padding-top: 36px;
+padding-left: 156px;
+font-family: "Montserrat", sans-serif;
+font-weight: 400;
+}
+.timer {
+  display: flex;
+
+  gap: 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+ 
+}
+.timer-input{
+  width: 240px;
+  border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 16px;
+      line-height: 150%;
+      color: #2e2f42;
+      font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        border: 1px solid #808080;
+}
+
+button[data-start] {
+  border-radius: 8px;
+    padding: 8px 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    border: none;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #fff;
+    margin-left: 8px;
+    margin-bottom: 32px;
+    outline: none;
+    background: #4e75ff;
+    transition: background-color 0.3s ease;
+}
+.flatpickr-day.selected{
+  background-color: #4e75ff !important;
+}
+.flatpickr-day.today{
+  border-color: #4e75ff !important;
+}
+button[data-start]:hover{
+  background-color: #6c8cff;
+}
+
+button[data-start]:disabled {
+  background-color: #cfcfcf;
+  
+  color: #989898;
+  cursor: default;
+}
+
+.value {
+  font-size: 40px;
+}
+.label{
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+
+
+
+
+/* snackbar */
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  padding: 36px 156px;
+  font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+
+.form input {
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  margin-top: 8px;
+  font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    border: 1px solid #808080;
+      border-radius: 4px;
+    
+}
+.form input:hover{
+  border: 1px solid #000;
+    border-radius: 4px;
+
+}
+.form input:focus{
+  outline: none;
+  border: 1px solid #4e75ff;
+    border-radius: 4px;
+}
+
+.form fieldset {
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  padding-bottom: 8px;
+  padding-left: 48px;
+  padding-right: 48px;
+  gap: 48px;
+  margin-bottom: 24px;
+  border: 1px solid #808080;
+    border-radius: 4px;
+ 
+}
+.form fieldset:hover {
+  border: 1px solid #000;
+    
+}
+.form fieldset:focus-within {
+  border: 1px solid #000;
+}
+
+
+.form button {
+  padding: 10px 20px;
+  background-color: #4e75ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+.form button:hover{
+  background-color: #6c8cff;
+}
